@@ -2,54 +2,1093 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Online Shopping kart </title>
-   <link rel="shortcut icon"
-      href="./png-transparent-web-development-responsive-web-design-e-commerce-business-ecommerce-blue-angle-web-design.ico"
-      type="image/x-icon">
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Online Shopping </title> 
+
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+
 </head>
 
-<body id="body">
-   <div class="container">
-      <button id="cartbtn"><a href="./Cart.html">My Cart</a></button>
-     
-      <!-- <button id="cartbtn" onclick="DarkTheme()">Dark Theme</button> -->
-      <div class="box box1">
-         <h1 style="color: white;">Men's Collection</h1>
-         <h2 style="color:white;">60% Discount's</h2>
-         <button id="btn"><a href="./menscollection.html">Explore</a></button>
-      </div>
-      <div class="box box2">
-         <h1 style="color: white;">Women's Collection</h1>
-         <h2 style="color: white;">70% Discount's</h2>
-         <button id="btn"><a href="./femalescollection.html">Explore</a></button>
-      </div>
-      <div class="box box3">
-         <h1 style="color: white;">Kid's Collection</h1>
-         <h2 style="color: white;">40% Discount's</h2>
-         <button id="btn"><a href="./kidscollection.html">Explore</a></button>
-      </div>
-      <div class="box box4">
-         <h1 style="color: white;">Mobile's and Laptop's</h1>
-         <h2 style="color: white;">50% Discount's</h2>
-         <button id="btn"><a href="./mobile.html">Explore</a></button>
-      </div>
-      <div class="box box5">
-         <h1 style="color: white;">Book's Collection</h1>
-         <h2 style="color: white;">70% Discount's</h2>
-         <button id="btn"><a href="./book.html">Explore</a></button>
-      </div>
-      <div class="box box6">
-         <h1 style="color: white;">Electronic's Collection</h1>
-         <h2 style="color: white;">25% Discount's</h2>
-         <button id="btn"><a href="./electronics.html">Explore</a></button>
-      </div>
+<body id="top">
 
-   </div>
-   <script src="app.js"></script>
+  <!--- #HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <h3 style="color: orangered;">Online Shopping</h3>
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <h3 style="color: orangered; margin-left: 50px;" >Online Shopping</h3>
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./menscollections.html" class="navbar-link">Products</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./cart.html" class="navbar-link">Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Wishlist</span>
+
+              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+
+              <data class="nav-action-text" value="318.00">Basket: <strong>RS. 1318.00</strong></data>
+
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/hero-banner.png')">
+        <div class="container">
+
+          <h2 class="h1 hero-title">
+            New Summer <strong>Shoes Collection</strong>
+          </h2>
+
+          <p class="hero-text">
+            Competently expedite alternative benefits whereas leading-edge catalysts for change. Globally leverage
+            existing an
+            expanded array of leadership.
+          </p>
+
+          <button class="btn btn-primary">
+            <span>Shop Now</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection">
+        <div class="container">
+
+          <ul class="collection-list has-scrollbar">
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/collection-1.jpg')">
+                <h3 class="h4 card-title">Men Collections</h3>
+
+                <a href="./menscollections.html" class="btn btn-secondary">
+                  <span>Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/collection-2.jpg')">
+                <h3 class="h4 card-title">Women Collections</h3>
+
+                <a href="./femalecollections.html" class="btn btn-secondary">
+                  <span>Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/collection-3.jpg')">
+                <h3 class="h4 card-title">Sports Collections</h3>
+
+                <a href="./sportscollections.html" class="btn btn-secondary">
+                  <span>Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Bestsellers Products</h2>
+<!-- tittle btn -->
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">All</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Dress</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Mobile</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Makeup</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Shoes</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Watch</button>
+            </li>
+
+          </ul>
+
+          <ul class="product-list">
+<!-- dress -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0" >
+
+                <figure class="card-banner" >
+                  <img src="https://img.freepik.com/free-photo/portrait-handsome-fashion-stylish-businessman-model-dressed-elegant-light-pink-suit-posing-metrosexual_158538-9163.jpg?semt=ais_hybrid" width="312" height="350" loading="lazy" >
+
+                  <div class="card-badge">New</div>
+
+                
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Men</a> /
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Dress </a>
+                  </h3>
+
+                  <data class="card-price" value="170.85">RS. 700 <del>RS. 1900</del></data>
+                  <a href="./menscollections.html" class="btn btn-secondary" style="margin-top: 25px;">
+                    <span style="margin-left: 60px;">Explore All</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+<!-- mobiles -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="data:image/webp;base64,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" width="312" height="350" loading="lazy">
+
+                
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Android</a>  /
+                    <a href="#" class="card-cat-link">Iphone</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Iphone 15 Pro</a>
+                  </h3>
+
+                  <data class="card-price" value="170.85">RS. 70,000 <del>RS. 120000</del></data>
+
+                  <a href="./electroniccollections.html" class="btn btn-secondary" style="margin-top: 25px;">
+                    <span style="margin-left: 60px;">Explore All</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+<!-- shoes -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="https://img.freepik.com/premium-photo/blue-shoes_78621-2760.jpg?semt=ais_hybrid" width="312" height="350" loading="lazy">
+
+                  <div class="card-badge">New</div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Men</a> /
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Simple Fabric Shoe</a>
+                  </h3>
+
+                  <data class="card-price" value="170.85">RS. 300 <del>RS. 440</del></data>
+                  <a href="./sportscollections.html" class="btn btn-secondary" style="margin-top: 25px;">
+                    <span style="margin-left: 60px;">Explore All</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+<!-- watch -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="https://img.freepik.com/premium-photo/watch-isolated-white-background_1014317-2629.jpg?semt=ais_hybrid" width="312" height="350" loading="lazy">
+
+                  <div class="card-badge"> -25%</div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Men</a> /
+                    <a href="#" class="card-cat-link">Sports</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Sonata Quartz Analog</a>
+                  </h3>
+
+                  <data class="card-price" value="170.85">RS. 370 <del>RS. 700</del></data>
+                  <a href="./electroniccollections.html" class="btn btn-secondary" style="margin-top: 25px;">
+                    <span style="margin-left: 60px;">Explore All</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--- #CTA -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <ul class="cta-list">
+
+            <li>
+              <div class="cta-card" style="background-image: url('https://t4.ftcdn.net/jpg/06/41/86/93/240_F_641869325_Y5VvhLoAcfWCM5JBVcyNTPL4f2J26NHF.jpg')">
+                <p class="card-subtitle">Levi's Dress</p>
+
+                <h3 class="h2 card-title">The Summer Sale Off 50%</h3>
+
+                <a href="./menscollections.html" class="btn btn-link">
+                  <span>Shop Now</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="cta-card" style="background-image: url('./assets/images/cta-2.jpg')">
+                <p class="card-subtitle">Nike Shoes</p>
+
+                <h3 class="h2 card-title">Makes Yourself Keep Sporty</h3>
+
+                <a href="./sportscollections.html" class="btn btn-link">
+                  <span>Shop Now</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL
+      -->
+
+      <section class="section special">
+        <div class="container">
+
+          <div class="special-banner" style="background-image: url('./assets/images/special-banner.jpg')">
+            <h2 class="h3 banner-title">New Trend Edition</h2>
+
+            <a href="./electroniccollections.html" class="btn btn-link">
+              <span >Explore All</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">Electronic Special</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437112.jpg?semt=ais_hybrid" width="312" height="350" loading="lazy">
+
+                    <div class="card-badge">New</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Android</a> /
+                      <a href="#" class="card-cat-link">Iphone</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Iphone 15 Pro</a>
+                    </h3>
+
+                    <data class="card-price" value="170.85">RS. 75,700 <del>RS. 90,000</del></data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="https://img.freepik.com/free-photo/open-laptop_144627-12145.jpg?semt=ais_hybrid" width="300" height="350" loading="lazy">
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Redmi</a> /
+                      <a href="#" class="card-cat-link">Mac</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Redmi notebook</a>
+                    </h3>
+
+                    <data class="card-price" value="170.85">RS. 45,700 <del>RS. 56000</del></data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="https://img.freepik.com/free-vector/vr-headset-headphones-gamepad-realistic-image_1284-14416.jpg?semt=ais_hybrid" width="312" height="350" loading="lazy">
+
+                    <div class="card-badge">New</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Men</a> /
+                      <a href="#" class="card-cat-link">Women</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Apple VR Headset</a>
+                    </h3>
+
+                    <data class="card-price" value="170.85">RS. 70,000<del>RS. 85,000</del></data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="https://img.freepik.com/free-vector/headphones-listen-music-dj-audio-headset_107791-12548.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="312" height="350" loading="lazy">
+
+                    <div class="card-badge"> -25%</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Men</a> /
+                      <a href="#" class="card-cat-link">Sports</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Redmi Headset </a>
+                    </h3>
+
+                    <data class="card-price" value="170.85">RS. 5000 <del>RS. 7500</del></data>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" width="53" height="28" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Free Shiping</h3>
+
+                  <p class="card-text">
+                    All orders over <span>$150</span>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" width="43" height="35" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Quick Payment</h3>
+
+                  <p class="card-text">
+                    100% secure payment
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Free Returns</h3>
+
+                  <p class="card-text">
+                    Money back in 30 days
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-4.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">24/7 Support</h3>
+
+                  <p class="card-text">
+                    Get Quick Support
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTA POST
+      -->
+
+      <section class="section insta-post">
+
+        <ul class="insta-post-list has-scrollbar">
+
+          <li class="insta-post-item">
+            <img src="https://img.freepik.com/free-photo/handsome-man-with-sequin-jacket-looking-down_1368-8162.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-2.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="https://img.freepik.com/free-photo/woman-posing-with-hands-hips_1187-1646.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="https://img.freepik.com/free-photo/closeup-shot-golden-watch-isolated_181624-28492.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="https://img.freepik.com/free-photo/smartphone-with-blank-black-screen-innovative-future-technology_53876-97896.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="https://img.freepik.com/premium-photo/new-white-vr-controller-virtual-reality-joystick-isolated-white-color-background_237099-353.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="https://img.freepik.com/free-photo/top-view-set-gadgets-purple-neon-light-blue-background-smartphone-smartwatch-wireless-headphones-wooden-table-copyspace-your-advertising-tech-modern-gadgets_155003-25552.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="https://img.freepik.com/free-photo/headphones-audio-listen_1203-7566.jpg?ga=GA1.1.1318725360.1731995812&semt=ais_hybrid" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          
+          <a href="#" class="logo">
+            <h3 style="color: orangered;">Online Shopping</h3>
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  258/1/1A,Airbypass Road,Tirupati
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+919734367123</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:footcap@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">happo.india@gmailcom</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">My Account</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">My Account</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">View Cart</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Wishlist</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Compare</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">New Products</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="footer-list">
+
+   
+
+            <table class="footer-table">
+              <tbody>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Authoritatively morph 24/7 potentialities with error-free partnerships.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">Haswanth Royal</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
